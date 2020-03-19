@@ -19,8 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   visualizing disease transmission and spreading with application of different counter
   mechanisms; including protection equipment (masks), social-distancing/home-office
   and automatic responses to infection state.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/visual-disease-transmission" # the subpath of your site, e.g. /blog
+url: "https://bitmeal.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _bitmeal
 github_username:  bitmeal
 show_downloads: false
