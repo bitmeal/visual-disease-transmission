@@ -1,0 +1,26 @@
+{% comment %}
+
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+Copyright (C) 2020, Arne Wendt
+
+{% endcomment %}
+
+
+
+
+{% unless figcounter %}
+    {% assign figcounter = 0 %}
+{% endunless %}
+{% assign figcounter = figcounter | plus: 1 %}
+{% assign lastfigure = figcounter %}
+{% assign nextfigure = figcounter | plus: 1 %}
+
+{% assign caption = "**Fig " | append: figcounter | append: ":** " | append: include.description | markdownify %}
+
+<figure class="image">
+    <img src="{{ include.url }}" alt="{{ caption | strip_html }}" class="image_img">
+    <figcaption>{{ caption }}</figcaption>
+</figure>
